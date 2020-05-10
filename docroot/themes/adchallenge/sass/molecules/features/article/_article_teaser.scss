@@ -1,0 +1,40 @@
+.node--type-article {
+  &.node--view-mode-teaser {
+    h2 {
+      font-weight: $font-weight-500;
+    }
+
+    .node__content {
+      .field--name-field-image {
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+
+      .createdDate {
+        color: $color-grey;
+        font-size: $font-size-small;
+        margin-bottom: 24px;
+      }
+
+      .field--name-body p {
+        color: $color-light-grey;
+        line-height: 30px;
+        font-weight: 300;
+        font-size: $font-size-normal;
+      }
+
+      .node__links {
+        margin-top: 46px;
+
+        .node-readmore {
+          font-weight: $font-weight-500;
+          font-size: $font-size-normal;
+          padding: 0;
+          position: relative;
+        }
+      }
+    }
+  }
+}

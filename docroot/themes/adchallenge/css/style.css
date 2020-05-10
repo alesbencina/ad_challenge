@@ -1,21 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100:400;500;900&display=swap" rel="stylesheet');
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;900&display=swap" rel="stylesheet');
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet');
+body .layout-container * {
+  color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  text-decoration: none; }
+
+body .layout-container h1 {
+  font-size: 64px;
+  font-weight: 100; }
+  body .layout-container h1 strong {
+    font-weight: 500; }
+
+body .layout-container h2 {
+  font-size: 24px;
+  font-weight: 100; }
+
+.container, header {
+  max-width: 1052px;
+  margin: 0 auto; }
+
+.node--type-article.node--view-mode-teaser h2 {
+  font-weight: 500; }
+
+.node--type-article.node--view-mode-teaser .node__content .field--name-field-image img {
+  max-width: 100%;
+  height: auto; }
+
+.node--type-article.node--view-mode-teaser .node__content .createdDate {
+  color: #949494;
+  font-size: 12px;
+  margin-bottom: 24px; }
+
+.node--type-article.node--view-mode-teaser .node__content .field--name-body p {
+  color: #D5D5D5;
+  line-height: 30px;
+  font-weight: 300;
+  font-size: 14px; }
+
+.node--type-article.node--view-mode-teaser .node__content .node__links {
+  margin-top: 46px; }
+  .node--type-article.node--view-mode-teaser .node__content .node__links .node-readmore {
+    font-weight: 500;
+    font-size: 14px;
+    padding: 0;
+    position: relative; }
+
+html {
+  scroll-behavior: smooth; }
+
 body .layout-container {
-  position: relative;
-  overflow: hidden; }
-  body .layout-container * {
-    color: #FFFFFF;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    text-decoration: none; }
-  body .layout-container h1 {
-    font-size: 64px;
-    font-weight: 100; }
-    body .layout-container h1 strong {
-      font-weight: 500; }
-  body .layout-container h2 {
-    font-size: 24px;
-    font-weight: 100; }
+  position: relative; }
   body .layout-container:before {
     content: '';
     position: absolute;
@@ -34,15 +70,26 @@ header .region-header {
   position: fixed;
   display: flex;
   flex-direction: row;
-  background: rgba(0, 0, 0, 0.25);
   z-index: 10;
-  width: 100%;
+  width: 1052px;
   justify-content: space-between;
   padding-top: 2rem;
   padding-bottom: 2rem;
   color: black; }
+  header .region-header:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    margin-left: calc((-100vw + 100%) / 2);
+    height: 100%;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: -2; }
   header .region-header nav.menu--main {
-    margin-right: 193px;
     font-weight: 500; }
     header .region-header nav.menu--main ul.menu {
       display: flex; }
@@ -53,13 +100,11 @@ header .region-header {
           header .region-header nav.menu--main ul.menu li a:hover:after {
             content: '';
             width: 100%;
-            border-bottom: 5px solid #0097A7;
+            border-bottom: 3px solid #0097A7;
             position: absolute;
             left: 0;
-            bottom: -7px;
-            border-radius: 3px; }
+            bottom: -7px; }
   header .region-header .block-system-branding-block {
-    margin-left: 193px;
     display: flex;
     align-items: center; }
     header .region-header .block-system-branding-block .site-slogan {
@@ -93,24 +138,25 @@ main .agiledrop-content-full-top-content-header {
     align-items: center;
     flex-direction: column;
     height: 100%; }
-    main .agiledrop-content-full-top-content-header .container .field--type-link {
+    main .agiledrop-content-full-top-content-header .container .field--type-link a {
       cursor: pointer;
       text-align: center;
       background: #FF5252;
+      color: #FFFFFF;
       border-radius: 5px;
       width: 180px;
       height: 50px;
       align-items: center;
       display: flex;
-      justify-content: center; }
-      main .agiledrop-content-full-top-content-header .container .field--type-link a {
-        text-decoration: none;
-        font-weight: 500;
-        text-transform: uppercase;
-        font-size: 14px; }
+      justify-content: center;
+      text-decoration: none;
+      font-weight: 500;
+      text-transform: uppercase;
+      font-size: 14px; }
 
 main #block-adchallenge-content {
-  margin: 123px 193px 58px; }
+  max-width: 1052px;
+  margin: 123px auto 58px; }
   main #block-adchallenge-content > h2 {
     font-size: 36px;
     position: relative;
@@ -137,7 +183,7 @@ main #block-adchallenge-content {
       flex: 0 0 calc(33.33333% - 1.875rem);
       flex-basis: calc(33.33333% - 1.875rem); }
       main #block-adchallenge-content .view-display-id-page_front .view-content .views-row:nth-child(odd) .node--view-mode-teaser .node__content .node__links .node-readmore:after {
-        content: "\203A";
+        content: "›";
         font-size: 30px;
         font-weight: 100;
         color: #0097A7;
@@ -145,7 +191,7 @@ main #block-adchallenge-content {
         position: absolute;
         top: -11px; }
       main #block-adchallenge-content .view-display-id-page_front .view-content .views-row:nth-child(even) .node--view-mode-teaser .node__content .node__links .node-readmore:after {
-        content: "\203A";
+        content: "›";
         font-size: 30px;
         font-weight: 100;
         color: #FF5252;
@@ -155,8 +201,6 @@ main #block-adchallenge-content {
 
 main .agiledrop-content-full-lastest-event,
 main .agiledrop-content-full-about-me {
-  margin-left: 193px;
-  margin-right: 193px;
   padding-top: 103px;
   padding-bottom: 103px; }
   main .agiledrop-content-full-lastest-event .container,
@@ -198,30 +242,56 @@ main .agiledrop-content-full-lastest-event {
     height: 100%;
     width: 100vw;
     background-color: #161E21;
-    z-index: -1; }
+    z-index: -2; }
 
 main .agiledrop-content-full-about-me {
   position: relative; }
-  main .agiledrop-content-full-about-me .content-left {
-    margin-left: 61px; }
-    main .agiledrop-content-full-about-me .content-left h2 {
-      font-size: 36px;
-      position: relative; }
-      main .agiledrop-content-full-about-me .content-left h2:after {
-        content: '';
-        width: 100px;
-        border-bottom: 3px solid #0097A7;
-        position: absolute;
-        left: 0;
-        bottom: -24px; }
-    main .agiledrop-content-full-about-me .content-left .field--name-body {
-      margin-top: 4rem;
-      font-size: 14px;
-      font-weight: 400; }
-      main .agiledrop-content-full-about-me .content-left .field--name-body * {
-        color: #D5D5D5;
-        line-height: 30px;
-        font-weight: 300; }
+  main .agiledrop-content-full-about-me .container {
+    padding-top: 103px;
+    padding-bottom: 103px; }
+  main .agiledrop-content-full-about-me .content-left h2 {
+    font-size: 36px;
+    position: relative; }
+    main .agiledrop-content-full-about-me .content-left h2:after {
+      content: '';
+      width: 100px;
+      border-bottom: 3px solid #0097A7;
+      position: absolute;
+      left: 0;
+      bottom: -24px; }
+  main .agiledrop-content-full-about-me .content-left .field--name-body {
+    margin-top: 4rem;
+    font-size: 14px;
+    font-weight: 400; }
+    main .agiledrop-content-full-about-me .content-left .field--name-body * {
+      color: #D5D5D5;
+      line-height: 30px;
+      font-weight: 300; }
+  main .agiledrop-content-full-about-me .img-right {
+    margin-left: 20px;
+    position: relative; }
+    main .agiledrop-content-full-about-me .img-right:before {
+      content: '';
+      position: absolute;
+      width: 330px;
+      height: 330px;
+      background: #0F2123;
+      z-index: -1; }
+    main .agiledrop-content-full-about-me .img-right:after {
+      content: '';
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      background: #1D1524;
+      z-index: -1; }
+    main .agiledrop-content-full-about-me .img-right:after {
+      right: -75px;
+      transform: rotate(45deg);
+      bottom: -72px; }
+    main .agiledrop-content-full-about-me .img-right:before {
+      left: -160px;
+      z-index: -1;
+      top: -80px; }
 
 footer .region-footer {
   width: 100%;
@@ -248,7 +318,7 @@ footer .menu--footer {
     height: 100%;
     width: 100vw;
     background-color: #0F2123;
-    z-index: -1; }
+    z-index: -2; }
 
 footer #block-footercreated {
   position: relative;
@@ -273,7 +343,7 @@ footer #block-footercreated {
     height: 100%;
     width: 100vw;
     background-color: #1E2C2E;
-    z-index: -1; }
+    z-index: -2; }
 
 ul.menu {
   display: flex;
@@ -284,24 +354,3 @@ ul.menu {
     ul.menu li a {
       text-decoration: none;
       font-size: 14px; }
-
-.node--type-article.node--view-mode-teaser h2 {
-  font-weight: 500; }
-
-.node--type-article.node--view-mode-teaser .node__content .createdDate {
-  color: #949494;
-  font-size: 12px;
-  margin-bottom: 24px; }
-
-.node--type-article.node--view-mode-teaser .node__content .field--name-body p {
-  color: #D5D5D5;
-  line-height: 30px;
-  font-weight: 300; }
-
-.node--type-article.node--view-mode-teaser .node__content .node__links {
-  margin-top: 46px; }
-  .node--type-article.node--view-mode-teaser .node__content .node__links .node-readmore {
-    font-weight: 500;
-    font-size: 14px;
-    padding: 0;
-    position: relative; }

@@ -1,68 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100:400;500;900&display=swap" rel="stylesheet');
-@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet');
+@import './configs/**/*';
+@import './atoms/*';
+@import './molecules/**/*';
 
-$bg-color: black;
-$bg-color-blue: #161E21;
-$color-red: #FF5252;
-$color-grey: #949494;
-$color-light-grey: #D5D5D5;
-$color-blue-lighter: #0097A7;
-
-$font-family: 'Roboto', sans-serif;
-
-$font-color: #FFFFFF;
-$font-color-sub: $color-light-grey;
-
-$font-size-small: 12px;
-$font-size-normal: 14px;
-$font-size-h1: 64px;
-$font-size-h2: 24px;
-$font-size-h2-overview: 36px;
-
-$font-weight-light: 100;
-$font-weight-normal: 400;
-$font-weight-500: 500; //medium
-$font-weight-bold: 900;
+html {
+  scroll-behavior: smooth;
+}
 
 body .layout-container {
   position: relative;
-  overflow: hidden;
-
-  * {
-    color: $font-color;
-    font-family: $font-family;
-    font-weight: $font-weight-normal;
-    text-decoration: none;
-  }
-
-  h1 {
-    font-size: $font-size-h1;
-    font-weight: $font-weight-light;
-
-    strong {
-      font-weight: $font-weight-500;
-    }
-  }
-
-  h2 {
-    font-size: $font-size-h2;
-    font-weight: $font-weight-light;
-  }
-
-  &:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: block;
-    margin-left: calc((-100vw + 100%) / 2);
-    height: 100%;
-    width: 100vw;
-    background-color: $bg-color;
-    z-index: -2;
-  }
+  @include bg-full-screen-width('before', $bg-color);
 }
 
 header {
@@ -70,16 +16,15 @@ header {
     position: fixed;
     display: flex;
     flex-direction: row;
-    background: rgba(0, 0, 0, 0.25);
     z-index: 10;
-    width: 100%;
+    width: 1052px;
     justify-content: space-between;
     padding-top: 2rem;
     padding-bottom: 2rem;
     color: $bg-color;
+    @include bg-full-screen-width('before', rgba(0, 0, 0, 0.25));
 
     nav.menu--main {
-      margin-right: 193px;
       font-weight: $font-weight-500;
 
       ul.menu {
@@ -90,23 +35,13 @@ header {
 
           &:hover {
             position: relative;
-
-            &:after {
-              content: '';
-              width: 100%;
-              border-bottom: 5px solid #0097A7;
-              position: absolute;
-              left: 0;
-              bottom: -7px;
-              border-radius: 3px;
-            }
+            @include h-seperator('after', $color-blue-lighter, 100%, -7px);
           }
         }
       }
     }
 
     .block-system-branding-block {
-      margin-left: 193px;
       display: flex;
       align-items: center;
 
@@ -155,46 +90,24 @@ main {
       height: 100%;
 
       .field--type-link {
-        cursor: pointer;
-        text-align: center;
-        background: $color-red;
-        border-radius: 5px;
-        width: 180px;
-        height: 50px;
-        align-items: center;
-        display: flex;
-        justify-content: center;
+
 
         a {
-          text-decoration: none;
-          font-weight: $font-weight-500;
-          text-transform: uppercase;
-          font-size: $font-size-normal;
+          @include button();
         }
-      }
-
-      .field--type-text-with-summary {
-
       }
     }
   }
 
   #block-adchallenge-content {
-    margin: 123px 193px 58px;
+    max-width: 1052px;
+    margin: 123px auto 58px;
 
     > h2 {
       font-size: $font-size-h2-overview;
       position: relative;
       text-transform: uppercase;
-
-      &:after {
-        content: '';
-        width: 100px;
-        border-bottom: 3px solid #0097A7;
-        position: absolute;
-        left: 0;
-        bottom: -24px;
-      }
+      @include h-seperator('after', $color-blue-lighter, 100px, -24px);
     }
 
     .view-display-id-page_front {
@@ -219,15 +132,8 @@ main {
               .node__content {
                 .node__links {
                   .node-readmore {
-                    &:after {
-                      content: "\203A";
-                      font-size: 30px;
-                      font-weight: 100;
-                      color: #0097A7;
-                      margin-left: 5px;
-                      position: absolute;
-                      top: -11px;
-                    }
+                    @include font-awesome-icon('after', '\203A', $color-blue-lighter);
+
                   }
                 }
               }
@@ -239,15 +145,7 @@ main {
               .node__content {
                 .node__links {
                   .node-readmore {
-                    &:after {
-                      content: "\203A";
-                      font-size: 30px;
-                      font-weight: 100;
-                      color: $color-red;
-                      margin-left: 5px;
-                      position: absolute;
-                      top: -11px;
-                    }
+                    @include font-awesome-icon('after', '\203A', $color-red);
                   }
                 }
               }
@@ -260,8 +158,7 @@ main {
 
   .agiledrop-content-full-lastest-event,
   .agiledrop-content-full-about-me {
-    margin-left: 193px;
-    margin-right: 193px;
+
     padding-top: 103px;
     padding-bottom: 103px;
 
@@ -280,15 +177,7 @@ main {
       h2 {
         font-size: $font-size-h2-overview;
         position: relative;
-
-        &:after {
-          content: '';
-          width: 100px;
-          border-bottom: 3px solid #0097A7;
-          position: absolute;
-          left: 0;
-          bottom: -24px;
-        }
+        @include h-seperator('after', $color-blue-lighter, 100px, -24px);
       }
 
       .field--name-body {
@@ -304,40 +193,22 @@ main {
       }
     }
 
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      display: block;
-      margin-left: calc((-100vw + 100%) / 2);
-      height: 100%;
-      width: 100vw;
-      background-color: $bg-color-blue;
-      z-index: -1;
-    }
+    @include bg-full-screen-width('before', $bg-color-blue);
   }
 
   .agiledrop-content-full-about-me {
     position: relative;
 
-    .content-left {
-      margin-left: 61px;
+    .container {
+      padding-top: 103px;
+      padding-bottom: 103px;
+    }
 
+    .content-left {
       h2 {
         font-size: $font-size-h2-overview;
         position: relative;
-
-        &:after {
-          content: '';
-          width: 100px;
-          border-bottom: 3px solid #0097A7;
-          position: absolute;
-          left: 0;
-          bottom: -24px;
-        }
+        @include h-seperator('after', $color-blue-lighter, 100px, -24px);
       }
 
       .field--name-body {
@@ -350,6 +221,29 @@ main {
           line-height: 30px;
           font-weight: 300;
         }
+      }
+    }
+
+    .img-right {
+      margin-left: 20px;
+      position: relative;
+
+      .field--name-field-image {
+      }
+
+      @include square('before', 330px, 330px, $bg-color-blue-3);
+      @include square('after', 150px, 150px, $bg-color-dark-purple);
+
+      &:after {
+        right: -75px;
+        transform: rotate(45deg);
+        bottom: -72px;
+      }
+
+      &:before {
+        left: -160px;
+        z-index: -1;
+        top: -80px;
       }
     }
   }
@@ -375,20 +269,7 @@ footer {
       }
     }
 
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      display: block;
-      margin-left: calc((-100vw + 100%) / 2);
-      height: 100%;
-      width: 100vw;
-      background-color: #0F2123;
-      z-index: -1;
-    }
+    @include bg-full-screen-width('before', $bg-color-blue-3);
   }
 
   #block-footercreated {
@@ -402,26 +283,15 @@ footer {
         color: $color-light-grey;
         font-weight: 300;
       }
+
       a {
         text-decoration: underline;
         font-weight: $font-weight-normal;
       }
     }
 
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      display: block;
-      margin-left: calc((-100vw + 100%) / 2);
-      height: 100%;
-      width: 100vw;
-      background-color: #1E2C2E;
-      z-index: -1;
-    }
+    @include bg-full-screen-width('before', $bg-color-blue-2);
+
   }
 
 }
@@ -437,47 +307,6 @@ ul.menu {
     a {
       text-decoration: none;
       font-size: $font-size-normal;
-    }
-  }
-}
-
-.node--type-article {
-  &.node--view-mode-teaser {
-    h2 {
-      font-weight: $font-weight-500;
-    }
-
-    .node__content {
-      .field--name-field-image {
-        img {
-          //max-width: 100%;
-          //max-height: 100%;
-          //object-fit: cover;
-        }
-      }
-
-      .createdDate {
-        color: $color-grey;
-        font-size: $font-size-small;
-        margin-bottom: 24px;
-      }
-
-      .field--name-body p {
-        color: $color-light-grey;
-        line-height: 30px;
-        font-weight: 300;
-      }
-
-      .node__links {
-        margin-top: 46px;
-
-        .node-readmore {
-          font-weight: $font-weight-500;
-          font-size: $font-size-normal;
-          padding: 0;
-          position: relative;
-        }
-      }
     }
   }
 }
