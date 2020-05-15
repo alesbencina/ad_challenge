@@ -305,3 +305,44 @@ ul.menu {
     }
   }
 }
+
+.bem-demo {
+  @include flex-box-container();
+
+  .flex__wrapper {
+    @include flex-box-3-col();
+  }
+
+  .news {
+    &--reversed {
+      display: flex;
+      flex-direction: column;
+
+      .news__created {
+        order: 2;
+      }
+
+      .news__body_summary {
+        order: 3
+      }
+
+      .news__image {
+        order: 4;
+      }
+
+      .news__links {
+        &-group {
+          margin-top: 0;
+          margin-bottom: 1rem;
+          order: 3;
+        }
+      }
+    }
+
+    &:not(&--reversed) {
+      .news__links {
+        margin-top: 46px;
+      }
+    }
+  }
+}
