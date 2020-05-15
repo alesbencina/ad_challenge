@@ -47,11 +47,10 @@ body .layout-container h2 {
     padding: 0;
     position: relative; }
 
-html {
-  scroll-behavior: smooth; }
-
 body .layout-container {
-  position: relative; }
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto; }
   body .layout-container:before {
     content: '';
     position: absolute;
@@ -169,35 +168,30 @@ main #block-adchallenge-content {
       left: 0;
       bottom: -24px; }
   main #block-adchallenge-content .view-display-id-page_front .view-content {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    margin-top: 1rem; }
-    main #block-adchallenge-content .view-display-id-page_front .view-content .views-row {
-      position: relative;
-      margin-left: .9375rem;
-      margin-right: .9375rem;
-      margin-top: 1.875rem;
-      min-height: 1px;
-      width: calc(33.33333% - 1.875rem);
-      flex: 0 0 calc(33.33333% - 1.875rem);
-      flex-basis: calc(33.33333% - 1.875rem); }
-      main #block-adchallenge-content .view-display-id-page_front .view-content .views-row:nth-child(odd) .node--view-mode-teaser .node__content .node__links .node-readmore:after {
-        content: "›";
-        font-size: 30px;
-        font-weight: 100;
-        color: #0097A7;
-        margin-left: 5px;
-        position: absolute;
-        top: -11px; }
-      main #block-adchallenge-content .view-display-id-page_front .view-content .views-row:nth-child(even) .node--view-mode-teaser .node__content .node__links .node-readmore:after {
-        content: "›";
-        font-size: 30px;
-        font-weight: 100;
-        color: #FF5252;
-        margin-left: 5px;
-        position: absolute;
-        top: -11px; }
+    display: grid;
+    grid-template-rows: 516px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0 60px; }
+    @media (max-width: 479px) {
+      main #block-adchallenge-content .view-display-id-page_front .view-content {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px 0; } }
+    main #block-adchallenge-content .view-display-id-page_front .view-content .views-row:nth-child(odd) .node--view-mode-teaser .node__content .node__links .node-readmore:after {
+      content: "›";
+      font-size: 30px;
+      font-weight: 100;
+      color: #0097A7;
+      margin-left: 5px;
+      position: absolute;
+      top: -11px; }
+    main #block-adchallenge-content .view-display-id-page_front .view-content .views-row:nth-child(even) .node--view-mode-teaser .node__content .node__links .node-readmore:after {
+      content: "›";
+      font-size: 30px;
+      font-weight: 100;
+      color: #FF5252;
+      margin-left: 5px;
+      position: absolute;
+      top: -11px; }
 
 main .agiledrop-content-full-lastest-event,
 main .agiledrop-content-full-about-me {

@@ -2,12 +2,10 @@
 @import './atoms/*';
 @import './molecules/**/*';
 
-html {
-  scroll-behavior: smooth;
-}
-
 body .layout-container {
   position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
   @include bg-full-screen-width('before', $bg-color);
 }
 
@@ -112,28 +110,25 @@ main {
 
     .view-display-id-page_front {
       .view-content {
-        display: flex;
-        flex-wrap: wrap;
-        position: relative;
-        margin-top: 1rem;
+        @if ($flexbox) {
+          @include flex-box-container();
+          .views-row {
+            @include flex-box-3-col();
+          }
+        } @else {
+          @include grid-container();
+          .views-row {
+            @include grid-items();
+          }
+        }
 
         .views-row {
-          position: relative;
-          margin-left: .9375rem;
-          margin-right: .9375rem;
-          margin-top: 1.875rem;
-          min-height: 1px;
-          width: calc(33.33333% - 1.875rem);
-          flex: 0 0 calc(33.33333% - 1.875rem);
-          flex-basis: calc(33.33333% - 1.875rem);
-
           &:nth-child(odd) {
             .node--view-mode-teaser {
               .node__content {
                 .node__links {
                   .node-readmore {
                     @include font-awesome-icon('after', '\203A', $color-blue-lighter);
-
                   }
                 }
               }

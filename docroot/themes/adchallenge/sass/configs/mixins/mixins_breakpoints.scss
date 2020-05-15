@@ -1,0 +1,13 @@
+@mixin bp-xs {
+  @media (min-width: $bp-xs) {
+    @content;
+  }
+}
+
+// -- portrait phone only: smaller than 480 */
+
+@mixin bp-xs-small-only {
+  @media (max-width: $bp-xs-small-max) {
+    @content;
+  }
+}

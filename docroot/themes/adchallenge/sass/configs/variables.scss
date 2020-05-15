@@ -1,0 +1,10 @@
+// Easy switch between flexbox and grid. Defaults to flexbox.
+$flexbox: false;
+
+// * Breakpoints
+// =============================================================================
+
+$bp-xs: 320px;
+$bp-xs-small-max: 479px;
+$bp-xs-wide: 480px;
+$bp-xs-max: 767px;
