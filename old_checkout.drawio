@@ -1,1 +1,105 @@
-<mxfile host="app.diagrams.net" modified="2021-11-15T10:54:59.042Z" agent="5.0 (X11)" version="15.5.8" etag="UBxn5JryBMEEjzauvCUl" type="github"><diagram id="DJGvXifjl6EZYdPidAak">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-11-15T13:00:35.500Z" agent="5.0 (X11)" etag="p0dSVvHHayOyZb5PjKNx" version="15.5.8" type="github">
+  <diagram id="DJGvXifjl6EZYdPidAak" name="Page-1">
+    <mxGraphModel dx="2062" dy="1151" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="QY10zmYS6HhXm5vpr9cH-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QY10zmYS6HhXm5vpr9cH-1" target="QY10zmYS6HhXm5vpr9cH-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QY10zmYS6HhXm5vpr9cH-1" value="Select job type" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QY10zmYS6HhXm5vpr9cH-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QY10zmYS6HhXm5vpr9cH-2" target="QY10zmYS6HhXm5vpr9cH-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QY10zmYS6HhXm5vpr9cH-2" value="Fill in the information" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="290" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QY10zmYS6HhXm5vpr9cH-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QY10zmYS6HhXm5vpr9cH-4" target="QY10zmYS6HhXm5vpr9cH-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QY10zmYS6HhXm5vpr9cH-4" value="Select job upgrades" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="290" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QY10zmYS6HhXm5vpr9cH-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QY10zmYS6HhXm5vpr9cH-10" target="QY10zmYS6HhXm5vpr9cH-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QY10zmYS6HhXm5vpr9cH-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QY10zmYS6HhXm5vpr9cH-10" target="QY10zmYS6HhXm5vpr9cH-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QY10zmYS6HhXm5vpr9cH-10" value="Have credits?" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="310" y="510" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="QY10zmYS6HhXm5vpr9cH-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QY10zmYS6HhXm5vpr9cH-12" target="QY10zmYS6HhXm5vpr9cH-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QY10zmYS6HhXm5vpr9cH-12" value="Subtract credits" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="500" y="520" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QY10zmYS6HhXm5vpr9cH-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QY10zmYS6HhXm5vpr9cH-14" target="QY10zmYS6HhXm5vpr9cH-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QY10zmYS6HhXm5vpr9cH-14" value="Create order" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="520" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QY10zmYS6HhXm5vpr9cH-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QY10zmYS6HhXm5vpr9cH-16" target="QY10zmYS6HhXm5vpr9cH-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QY10zmYS6HhXm5vpr9cH-16" value="Fill in billing information&lt;br&gt;and calculate tax" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="660" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QY10zmYS6HhXm5vpr9cH-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QY10zmYS6HhXm5vpr9cH-18" target="QY10zmYS6HhXm5vpr9cH-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QY10zmYS6HhXm5vpr9cH-18" value="Submit and redirect&lt;br&gt;to payment step" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="800" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QY10zmYS6HhXm5vpr9cH-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QY10zmYS6HhXm5vpr9cH-20" target="QY10zmYS6HhXm5vpr9cH-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QY10zmYS6HhXm5vpr9cH-20" value="Stripe" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="940" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QY10zmYS6HhXm5vpr9cH-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QY10zmYS6HhXm5vpr9cH-22" target="QY10zmYS6HhXm5vpr9cH-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QY10zmYS6HhXm5vpr9cH-22" value="Enter credit card &lt;br&gt;info" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="1050" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QY10zmYS6HhXm5vpr9cH-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="QY10zmYS6HhXm5vpr9cH-24" target="QY10zmYS6HhXm5vpr9cH-26">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="210" y="1200" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QY10zmYS6HhXm5vpr9cH-24" value="Submit payment and&lt;br&gt;wait for stripe to finish&lt;br&gt;processing" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="1170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QY10zmYS6HhXm5vpr9cH-26" value="Set job unpublished and redirect to job manager" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="340" y="1170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QY10zmYS6HhXm5vpr9cH-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QY10zmYS6HhXm5vpr9cH-28" target="QY10zmYS6HhXm5vpr9cH-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QY10zmYS6HhXm5vpr9cH-28" value="&lt;div&gt;Show info credit substracted&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="500" y="660" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QY10zmYS6HhXm5vpr9cH-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QY10zmYS6HhXm5vpr9cH-30" target="QY10zmYS6HhXm5vpr9cH-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QY10zmYS6HhXm5vpr9cH-30" value="publish job" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="500" y="800" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QY10zmYS6HhXm5vpr9cH-34" value="" style="verticalLabelPosition=bottom;sketch=0;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;align=center;outlineConnect=0;shape=mxgraph.citrix.process;" vertex="1" parent="1">
+          <mxGeometry x="258" y="1280" width="52" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="QY10zmYS6HhXm5vpr9cH-36" value="Wait for stripe to process the order in backend and publish the job" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="190" y="1240" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QY10zmYS6HhXm5vpr9cH-37" value="Redirect to job manager" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="500" y="940" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
