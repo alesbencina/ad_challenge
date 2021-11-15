@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-11-15T13:43:16.720Z" agent="5.0 (X11)" etag="6sYukapIO7ZboAlUO9JN" version="15.5.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-11-15T14:58:21.029Z" agent="5.0 (X11)" etag="bGybHy9KVQN8mQEvh5ed" version="15.5.8" type="github">
   <diagram id="-u9c0rNSNzjVBrYj03Kq" name="Page-1">
     <mxGraphModel dx="2912" dy="1151" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -28,7 +28,7 @@
         <mxCell id="EgzlLgq-aQsE86DNONWg-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EgzlLgq-aQsE86DNONWg-9" target="EgzlLgq-aQsE86DNONWg-13">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="EgzlLgq-aQsE86DNONWg-9" value="&lt;b&gt;&lt;br&gt;User have credits and there are no upgrades to be paid || or flatrate&lt;br&gt;&lt;/b&gt;" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+        <mxCell id="EgzlLgq-aQsE86DNONWg-9" value="&lt;b&gt;&lt;br&gt;User have credits &amp;amp;&amp;amp; there are no upgrades to be paid || or flatrate&lt;br&gt;|| user has no credits&lt;br&gt;&lt;/b&gt;" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="280" y="340" width="120" height="120" as="geometry" />
         </mxCell>
         <mxCell id="EgzlLgq-aQsE86DNONWg-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EgzlLgq-aQsE86DNONWg-11" target="EgzlLgq-aQsE86DNONWg-27">
@@ -82,13 +82,13 @@
         <mxCell id="EgzlLgq-aQsE86DNONWg-27" value="&lt;div&gt;Show info credit substracted&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="520" y="470" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="EgzlLgq-aQsE86DNONWg-28" value="publish job" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+        <mxCell id="EgzlLgq-aQsE86DNONWg-28" value="publish job and apply upgrades to job" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="520" y="690" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="EgzlLgq-aQsE86DNONWg-29" value="" style="verticalLabelPosition=bottom;sketch=0;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;align=center;outlineConnect=0;shape=mxgraph.citrix.process;" vertex="1" parent="1">
-          <mxGeometry x="-425" y="960" width="30.19" height="36" as="geometry" />
+          <mxGeometry x="-440" y="960" width="30.19" height="36" as="geometry" />
         </mxCell>
-        <mxCell id="EgzlLgq-aQsE86DNONWg-30" value="Drupal wait for stripe to recieve if payment is charged. Once we is charged, set job published" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="EgzlLgq-aQsE86DNONWg-30" value="Drupal wait for stripe to recieve if payment is charged. Once is charged, set job published" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-540" y="960" width="120" height="160" as="geometry" />
         </mxCell>
         <mxCell id="EgzlLgq-aQsE86DNONWg-31" value="TRUE" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
@@ -105,7 +105,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="EgzlLgq-aQsE86DNONWg-34" value="" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="-545" y="980" width="130" height="110" as="geometry" />
+          <mxGeometry x="-550" y="980" width="130" height="110" as="geometry" />
         </mxCell>
         <mxCell id="EgzlLgq-aQsE86DNONWg-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EgzlLgq-aQsE86DNONWg-36" target="EgzlLgq-aQsE86DNONWg-28">
           <mxGeometry relative="1" as="geometry" />
@@ -138,13 +138,13 @@
           <mxGeometry x="-250" y="580" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="EgzlLgq-aQsE86DNONWg-47" value="&lt;div&gt;Stripe&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-340" y="590" width="60" height="30" as="geometry" />
+          <mxGeometry x="-360" y="600" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="EgzlLgq-aQsE86DNONWg-52" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EgzlLgq-aQsE86DNONWg-49" target="EgzlLgq-aQsE86DNONWg-51">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="EgzlLgq-aQsE86DNONWg-49" value="submit and redirect to payment page" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-270" y="690" width="120" height="60" as="geometry" />
+          <mxGeometry x="-270" y="720" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="EgzlLgq-aQsE86DNONWg-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="EgzlLgq-aQsE86DNONWg-51" target="EgzlLgq-aQsE86DNONWg-28">
           <mxGeometry relative="1" as="geometry" />
@@ -163,6 +163,9 @@
         </mxCell>
         <mxCell id="EgzlLgq-aQsE86DNONWg-59" value="false" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="40" y="590" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EgzlLgq-aQsE86DNONWg-60" value="Pay per invoice" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-270" y="670" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
