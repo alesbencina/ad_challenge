@@ -1,1 +1,96 @@
-<mxfile host="app.diagrams.net" modified="2021-11-22T08:24:53.246Z" agent="5.0 (X11)" version="15.7.4" etag="bpSQqgTSQ0yYfc1q0B6o" type="github"><diagram id="iSf-yj_qMK12I_bqWUh1">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-11-22T13:26:57.282Z" agent="5.0 (X11)" etag="_VoJxf6jElll_RggL01P" version="15.7.4" type="github">
+  <diagram id="iSf-yj_qMK12I_bqWUh1" name="Page-1">
+    <mxGraphModel dx="2062" dy="2251" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="6jVoLOLnqwUoFQShDyTh-1" value="Importer and taxonomy terms mapping with synonyms" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry y="-10" width="150" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="6jVoLOLnqwUoFQShDyTh-14" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="340" y="80" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6jVoLOLnqwUoFQShDyTh-15" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" source="6jVoLOLnqwUoFQShDyTh-14" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="355" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6jVoLOLnqwUoFQShDyTh-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6jVoLOLnqwUoFQShDyTh-16" target="6jVoLOLnqwUoFQShDyTh-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6jVoLOLnqwUoFQShDyTh-16" value="Start processing import" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="295" y="170" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6jVoLOLnqwUoFQShDyTh-18" value="Start" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="370" y="60" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6jVoLOLnqwUoFQShDyTh-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="6jVoLOLnqwUoFQShDyTh-19" target="6jVoLOLnqwUoFQShDyTh-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6jVoLOLnqwUoFQShDyTh-19" value="Feed entity (job)" style="html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="260" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="6jVoLOLnqwUoFQShDyTh-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="6jVoLOLnqwUoFQShDyTh-25" target="6jVoLOLnqwUoFQShDyTh-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6jVoLOLnqwUoFQShDyTh-25" value="Find taxonomy term by vocabulary and name" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="285" y="360" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="6jVoLOLnqwUoFQShDyTh-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="6jVoLOLnqwUoFQShDyTh-27" target="6jVoLOLnqwUoFQShDyTh-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6jVoLOLnqwUoFQShDyTh-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="6jVoLOLnqwUoFQShDyTh-27" target="6jVoLOLnqwUoFQShDyTh-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6jVoLOLnqwUoFQShDyTh-27" value="Taxonomy term found by name?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="285" y="470" width="140" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="6jVoLOLnqwUoFQShDyTh-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6jVoLOLnqwUoFQShDyTh-29" target="6jVoLOLnqwUoFQShDyTh-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6jVoLOLnqwUoFQShDyTh-29" value="Assign id of term" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="515" y="500" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6jVoLOLnqwUoFQShDyTh-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="6jVoLOLnqwUoFQShDyTh-33" target="6jVoLOLnqwUoFQShDyTh-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6jVoLOLnqwUoFQShDyTh-33" value="Find taxonomy term by vocabulary id and synonym" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="295" y="700" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6jVoLOLnqwUoFQShDyTh-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="6jVoLOLnqwUoFQShDyTh-35" target="6jVoLOLnqwUoFQShDyTh-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6jVoLOLnqwUoFQShDyTh-40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="6jVoLOLnqwUoFQShDyTh-35" target="6jVoLOLnqwUoFQShDyTh-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6jVoLOLnqwUoFQShDyTh-35" value="Found?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="315" y="830" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6jVoLOLnqwUoFQShDyTh-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6jVoLOLnqwUoFQShDyTh-37" target="6jVoLOLnqwUoFQShDyTh-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6jVoLOLnqwUoFQShDyTh-37" value="Assign id of term" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="455" y="840" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6jVoLOLnqwUoFQShDyTh-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="6jVoLOLnqwUoFQShDyTh-39" target="6jVoLOLnqwUoFQShDyTh-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6jVoLOLnqwUoFQShDyTh-39" value="Skip asiging of taxonomy term" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="295" y="1000" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6jVoLOLnqwUoFQShDyTh-41" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="690" y="950" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6jVoLOLnqwUoFQShDyTh-47" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="415" y="500" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6jVoLOLnqwUoFQShDyTh-48" value="End" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="730" y="940" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="6jVoLOLnqwUoFQShDyTh-49" value="&lt;div&gt;No&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="295" y="600" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
